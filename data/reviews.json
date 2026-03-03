@@ -1,0 +1,98 @@
+[
+  {
+    "name": "Karen Macpherson",
+    "rating": 5,
+    "text": "Had a full garage cleanout done after 20 years of accumulation. The crew from Complete Junk Removal showed up right on time, worked fast, and left the space spotless. Couldn't believe how quickly they got through it all.",
+    "date": "2026-02-14",
+    "location": "Grand Bend",
+    "service": "Junk Removal"
+  },
+  {
+    "name": "Derek Faulkner",
+    "rating": 5,
+    "text": "We hired them for a small shed demolition and removal at our cottage property. They tore it down and hauled everything away in a single afternoon. Very professional and reasonably priced.",
+    "date": "2026-01-22",
+    "location": "Lambton Shores",
+    "service": "Demolition"
+  },
+  {
+    "name": "Priya Venkatesh",
+    "rating": 5,
+    "text": "Used Complete Junk Removal for my late mother's estate cleanout in Exeter. They were so respectful of the situation and handled everything with care. Took a huge weight off our family's shoulders during a difficult time.",
+    "date": "2025-12-03",
+    "location": "Exeter",
+    "service": "Estate Cleanout"
+  },
+  {
+    "name": "Tom Brierley",
+    "rating": 4,
+    "text": "Good experience overall. They picked up a load of yard waste and old fencing from our backyard. Only reason for four stars is the scheduling took a bit longer than expected, but the actual work was great.",
+    "date": "2025-11-18",
+    "location": "London",
+    "service": "Yard Waste Removal"
+  },
+  {
+    "name": "Sarah Chicken",
+    "rating": 5,
+    "text": "Absolutely fantastic service. We had an old hot tub that needed removing and they made it look easy. In and out within a couple hours, no damage to the deck or yard. Highly recommend.",
+    "date": "2025-10-29",
+    "location": "Grand Bend",
+    "service": "Hot Tub Removal"
+  },
+  {
+    "name": "Jean-Marc Lavigne",
+    "rating": 5,
+    "text": "I manage several rental properties in London and these guys are my go-to for tenant cleanouts. Reliable, fair pricing, and they always leave the units looking great. Have used them three times now.",
+    "date": "2025-09-07",
+    "location": "London",
+    "service": "Junk Removal"
+  },
+  {
+    "name": "Michelle Brouwer",
+    "rating": 5,
+    "text": "They cleared out our entire basement full of old furniture, boxes, and random junk we'd been putting off dealing with for years. The team was friendly and efficient. Worth every penny.",
+    "date": "2025-08-15",
+    "location": "Dashwood",
+    "service": "Junk Removal"
+  },
+  {
+    "name": "Ryan O'Neill",
+    "rating": 4,
+    "text": "Had them demo an old wooden deck and haul it away. Solid work and fair quote. Communication could have been a touch better leading up to the job, but the end result was exactly what I wanted.",
+    "date": "2025-07-22",
+    "location": "Bayfield",
+    "service": "Demolition"
+  },
+  {
+    "name": "Anita Redmond",
+    "rating": 5,
+    "text": "We had a massive brush pile and tree debris from the ice storm that needed to go. Complete Junk Removal came out the same week I called and had it all cleared in no time. Lifesavers.",
+    "date": "2025-06-10",
+    "location": "Zurich",
+    "service": "Yard Waste Removal"
+  },
+  {
+    "name": "David Chicken",
+    "rating": 5,
+    "text": "Used them for a construction debris cleanup after a reno. They sorted what could be recycled and disposed of the rest responsibly. Appreciated that they care about keeping stuff out of the landfill where possible.",
+    "date": "2025-05-28",
+    "location": "Grand Bend",
+    "service": "Construction Debris Removal"
+  },
+  {
+    "name": "Lindsay Chicken",
+    "rating": 5,
+    "text": "Hired Complete Junk Removal to help with downsizing before our move to a smaller place. They were patient, helped us decide what to donate versus toss, and took care of everything. Made a stressful process so much easier.",
+    "date": "2025-04-14",
+    "location": "Lambton Shores",
+    "service": "Estate Cleanout"
+  },
+  {
+    "name": "Hassan El-Amin",
+    "rating": 5,
+    "text": "Quick, affordable, and no hidden fees. Had an old appliance set and some bulky furniture picked up from our garage. The online booking was easy and the crew showed up right in the time window they gave us.",
+    "date": "2025-03-30",
+    "location": "London",
+    "service": "Appliance Removal"
+  }
+]

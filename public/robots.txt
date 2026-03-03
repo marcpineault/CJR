@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://completejunkremoval.ca/sitemap.xml
