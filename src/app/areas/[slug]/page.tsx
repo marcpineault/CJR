@@ -94,7 +94,7 @@ export function generateMetadata({
       siteName: "Complete Junk Removal",
       images: [
         {
-          url: "/images/team-trucks-fleet.jpg",
+          url: "/images/team-trucks-fleet.webp",
           width: 1200,
           height: 630,
           alt: `Complete Junk Removal serving ${area.city} Ontario with junk removal and demolition`,
@@ -157,7 +157,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
       closes: "19:00",
     },
     priceRange: "$$",
-    image: "https://completejunkremoval.ca/images/team-trucks-fleet.jpg",
+    image: "https://completejunkremoval.ca/images/team-trucks-fleet.webp",
   };
 
   const introParagraphs = area.content.intro.split("\n\n");
@@ -205,7 +205,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/images/junk-removal-furniture-hallway.jpg"
+                src="/images/junk-removal-furniture-hallway.webp"
                 alt={`Residential junk removal service in ${area.city} Ontario`}
                 width={400}
                 height={300}
@@ -215,7 +215,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
             </div>
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/images/shed-demolition-service.jpg"
+                src="/images/shed-demolition-service.webp"
                 alt={`Demolition services available in ${area.city} by Complete Junk Removal`}
                 width={400}
                 height={300}
@@ -225,7 +225,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
             </div>
             <div className="rounded-xl overflow-hidden">
               <Image
-                src="/images/complete-junk-removal-trailer.jpg"
+                src="/images/complete-junk-removal-trailer.webp"
                 alt={`Complete Junk Removal dump trailer serving ${area.city} and surrounding areas`}
                 width={400}
                 height={300}

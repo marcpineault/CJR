@@ -158,7 +158,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
             <div className="rounded-xl overflow-hidden aspect-[4/3]">
               <Image
-                src="/images/junk-removal-furniture-hallway.jpg"
+                src="/images/junk-removal-furniture-hallway.webp"
                 alt="Junk removal worker carrying furniture through a hallway during a residential cleanout"
                 width={400}
                 height={300}
@@ -168,7 +168,7 @@ export default function Home() {
             </div>
             <div className="rounded-xl overflow-hidden aspect-[4/3]">
               <Image
-                src="/images/demolition-wood-dumpster.jpg"
+                src="/images/demolition-wood-dumpster.webp"
                 alt="Worker tossing demolition wood debris into a Complete Junk Removal dump trailer"
                 width={400}
                 height={300}
@@ -178,7 +178,7 @@ export default function Home() {
             </div>
             <div className="rounded-xl overflow-hidden aspect-[4/3]">
               <Image
-                src="/images/shed-demolition-service.jpg"
+                src="/images/shed-demolition-service.webp"
                 alt="Complete Junk Removal crew performing shed demolition with a sledgehammer"
                 width={400}
                 height={300}
@@ -188,7 +188,7 @@ export default function Home() {
             </div>
             <div className="rounded-xl overflow-hidden aspect-[4/3]">
               <Image
-                src="/images/junk-hauling-walkway.jpg"
+                src="/images/junk-hauling-walkway.webp"
                 alt="Junk removal crew hauling bags and debris from a residential property in Ontario"
                 width={400}
                 height={300}
@@ -256,7 +256,7 @@ export default function Home() {
       <section className="relative section-padding bg-brand-dark overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/team-group-photo.jpg"
+            src="/images/team-group-photo.webp"
             alt="The Complete Junk Removal team — five crew members standing in front of their truck fleet"
             fill
             className="object-cover opacity-15"

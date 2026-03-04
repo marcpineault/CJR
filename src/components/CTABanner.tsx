@@ -15,7 +15,7 @@ export default function CTABanner({
     <section className="relative bg-brand-green overflow-hidden">
       <div className="absolute inset-0">
         <Image
-          src="/images/owner-trucks-trailer.jpg"
+          src="/images/owner-trucks-trailer.webp"
           alt="Complete Junk Removal owner with trucks and trailer ready for service"
           fill
           className="object-cover opacity-10"

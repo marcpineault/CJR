@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Junk Removal Pricing — Complete Junk Removal",
     description: "Volume-based junk removal pricing starting from $150. Free estimates, no hidden fees.",
-    images: [{ url: "/images/complete-junk-removal-trailer.jpg", width: 1200, height: 630, alt: "Complete Junk Removal branded dump trailer for junk hauling" }],
+    images: [{ url: "/images/complete-junk-removal-trailer.webp", width: 1200, height: 630, alt: "Complete Junk Removal branded dump trailer for junk hauling" }],
   },
 };
 
@@ -85,10 +85,44 @@ const pricingFaqs = [
   },
 ];
 
+const offerSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Junk Removal",
+  provider: {
+    "@type": "LocalBusiness",
+    name: "Complete Junk Removal",
+    telephone: "+1-519-870-9136",
+    url: "https://completejunkremoval.ca",
+  },
+  areaServed: {
+    "@type": "GeoCircle",
+    geoMidpoint: { "@type": "GeoCoordinates", latitude: 43.3134, longitude: -81.8836 },
+    geoRadius: "100000",
+  },
+  hasOfferCatalog: {
+    "@type": "OfferCatalog",
+    name: "Junk Removal Pricing",
+    itemListElement: loadSizes.map((load) => ({
+      "@type": "Offer",
+      name: load.name,
+      description: `${load.description}. ${load.examples}`,
+      price: load.price.replace("From $", ""),
+      priceCurrency: "CAD",
+      priceSpecification: {
+        "@type": "PriceSpecification",
+        price: load.price.replace("From $", ""),
+        priceCurrency: "CAD",
+        minPrice: load.price.replace("From $", ""),
+      },
+    })),
+  },
+};
+
 export default function PricingPage() {
   return (
     <>
-      <SchemaMarkup schema={localBusinessSchema} />
+      <SchemaMarkup schema={[localBusinessSchema, offerSchema]} />
 
       {/* Hero */}
       <section className="bg-brand-dark py-16 md:py-20">
@@ -208,7 +242,7 @@ export default function PricingPage() {
         <div className="container-max px-4 sm:px-6 lg:px-8 max-w-4xl">
           <div className="rounded-2xl overflow-hidden">
             <Image
-              src="/images/complete-junk-removal-trailer.jpg"
+              src="/images/complete-junk-removal-trailer.webp"
               alt="Complete Junk Removal branded dump trailer used for volume-based junk hauling in Grand Bend Ontario"
               width={1200}
               height={500}

@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Complete Junk Removal",
     images: [
       {
-        url: "/images/team-trucks-fleet.jpg",
+        url: "/images/team-trucks-fleet.webp",
         width: 1200,
         height: 630,
         alt: "Complete Junk Removal team with fleet of trucks in Southwestern Ontario",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Junk Removal Grand Bend & London ON | Complete Junk Removal",
     description:
       "Fast, affordable junk removal and demolition in Grand Bend, London & Southwestern Ontario. Same-day service. Call 519-870-9136.",
-    images: ["/images/team-trucks-fleet.jpg"],
+    images: ["/images/team-trucks-fleet.webp"],
   },
   robots: {
     index: true,

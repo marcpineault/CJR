@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/team-trucks-fleet.jpg"
+          src="/images/team-trucks-fleet.webp"
           alt="Complete Junk Removal team with trucks and trailers ready for junk hauling in Grand Bend Ontario"
           fill
           className="object-cover opacity-20"
@@ -102,7 +102,7 @@ export default function Hero() {
           <div className="hidden lg:block">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl shadow-black/30 border border-white/10">
               <Image
-                src="/images/owner-with-fleet.jpg"
+                src="/images/owner-with-fleet.webp"
                 alt="Complete Junk Removal owner standing with the company truck fleet and dump trailers in Grand Bend Ontario"
                 width={800}
                 height={600}

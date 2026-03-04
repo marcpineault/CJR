@@ -23,31 +23,31 @@ import services from "../../../../data/services.json";
 
 const serviceImages: Record<string, { src: string; alt: string }> = {
   "residential-junk-removal": {
-    src: "/images/junk-removal-furniture-hallway.jpg",
+    src: "/images/junk-removal-furniture-hallway.webp",
     alt: "Complete Junk Removal worker carrying a couch through a hallway during residential junk removal",
   },
   "commercial-junk-removal": {
-    src: "/images/junk-hauling-walkway.jpg",
+    src: "/images/junk-hauling-walkway.webp",
     alt: "Junk removal crew hauling commercial waste and bags from a property",
   },
   "garden-yard-waste": {
-    src: "/images/demolition-wood-dumpster.jpg",
+    src: "/images/demolition-wood-dumpster.webp",
     alt: "Worker tossing yard waste and wood debris into a dump trailer",
   },
   "residential-demolition": {
-    src: "/images/shed-demolition-service.jpg",
+    src: "/images/shed-demolition-service.webp",
     alt: "Complete Junk Removal crew performing shed demolition with a sledgehammer in Ontario",
   },
   "commercial-demolition": {
-    src: "/images/deck-demolition-sawzall.jpg",
+    src: "/images/deck-demolition-sawzall.webp",
     alt: "Worker using a reciprocating saw for deck demolition and removal",
   },
   "debris-removal": {
-    src: "/images/demolition-wood-dumpster.jpg",
+    src: "/images/demolition-wood-dumpster.webp",
     alt: "Construction debris being loaded into a Complete Junk Removal dump trailer",
   },
   "estate-cleanouts": {
-    src: "/images/junk-removal-furniture-hallway.jpg",
+    src: "/images/junk-removal-furniture-hallway.webp",
     alt: "Crew member carrying furniture during an estate cleanout in Southwestern Ontario",
   },
 };
@@ -92,7 +92,7 @@ export function generateMetadata({
       siteName: "Complete Junk Removal",
       images: ogImage
         ? [{ url: ogImage.src, width: 1200, height: 630, alt: ogImage.alt }]
-        : [{ url: "/images/team-trucks-fleet.jpg", width: 1200, height: 630, alt: "Complete Junk Removal team and fleet" }],
+        : [{ url: "/images/team-trucks-fleet.webp", width: 1200, height: 630, alt: "Complete Junk Removal team and fleet" }],
     },
   };
 }

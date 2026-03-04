@@ -17,7 +17,7 @@ export const metadata: Metadata = {
       "Locally owned and operated junk removal and demolition team serving Grand Bend, London & Southwestern Ontario.",
     images: [
       {
-        url: "/images/team-group-photo.jpg",
+        url: "/images/team-group-photo.webp",
         width: 1200,
         height: 630,
         alt: "Complete Junk Removal team standing with their fleet of trucks",
@@ -74,7 +74,7 @@ export default function AboutPage() {
       <section className="relative bg-brand-dark py-16 md:py-20 overflow-hidden">
         <div className="absolute inset-0">
           <Image
-            src="/images/team-group-photo.jpg"
+            src="/images/team-group-photo.webp"
             alt="Complete Junk Removal team members standing together in front of their truck fleet"
             fill
             className="object-cover opacity-20"
@@ -106,7 +106,7 @@ export default function AboutPage() {
           {/* Team photo */}
           <div className="mb-12 rounded-2xl overflow-hidden">
             <Image
-              src="/images/owner-with-fleet.jpg"
+              src="/images/owner-with-fleet.webp"
               alt="Complete Junk Removal owner standing proudly with the company truck fleet and dump trailers"
               width={1200}
               height={600}
@@ -149,7 +149,7 @@ export default function AboutPage() {
               <div className="space-y-6">
                 <div className="rounded-2xl overflow-hidden">
                   <Image
-                    src="/images/junk-hauling-walkway.jpg"
+                    src="/images/junk-hauling-walkway.webp"
                     alt="Complete Junk Removal crew hauling bags and items from a residential property"
                     width={600}
                     height={400}

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Customer Reviews — Complete Junk Removal",
     description: "5-star rated junk removal and demolition services in Grand Bend & London Ontario.",
-    images: [{ url: "/images/team-group-photo.jpg", width: 1200, height: 630, alt: "Complete Junk Removal 5-star rated team" }],
+    images: [{ url: "/images/team-group-photo.webp", width: 1200, height: 630, alt: "Complete Junk Removal 5-star rated team" }],
   },
 };
 
@@ -121,7 +121,7 @@ export default function ReviewsPage() {
             other homeowners find reliable junk removal services in their area.
           </p>
           <a
-            href="https://www.google.com/maps"
+            href="https://share.google/rcAIVYZ6qY3ZdHZZv"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary text-base px-8 py-4"

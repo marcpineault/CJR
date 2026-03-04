@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contact Complete Junk Removal — Free Estimates",
     description: "Call 519-870-9136 or text us photos for a fast, free junk removal quote in Grand Bend & London ON.",
-    images: [{ url: "/images/owner-with-fleet.jpg", width: 1200, height: 630, alt: "Contact Complete Junk Removal for a free estimate" }],
+    images: [{ url: "/images/owner-with-fleet.webp", width: 1200, height: 630, alt: "Contact Complete Junk Removal for a free estimate" }],
   },
 };
 
