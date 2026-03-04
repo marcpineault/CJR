@@ -1,15 +1,21 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { MessageCircle, Truck, Info } from "lucide-react";
 import FAQ from "@/components/FAQ";
 import CTABanner from "@/components/CTABanner";
 import SchemaMarkup, { localBusinessSchema } from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
-  title: "Junk Removal Pricing Grand Bend & London ON",
+  title: "Junk Removal Pricing Grand Bend & London ON — Affordable Rates",
   description:
-    "Transparent junk removal pricing in Grand Bend & London Ontario. Volume-based rates, free estimates, no hidden fees. Call 519-870-9136.",
+    "Transparent, volume-based junk removal pricing in Grand Bend & London Ontario. Starting from $150. Free estimates, no hidden fees. Demolition quotes available. Call 519-870-9136.",
   alternates: {
     canonical: "https://completejunkremoval.ca/pricing",
+  },
+  openGraph: {
+    title: "Junk Removal Pricing — Complete Junk Removal",
+    description: "Volume-based junk removal pricing starting from $150. Free estimates, no hidden fees.",
+    images: [{ url: "/images/complete-junk-removal-trailer.jpg", width: 1200, height: 630, alt: "Complete Junk Removal branded dump trailer for junk hauling" }],
   },
 };
 
@@ -193,6 +199,22 @@ export default function PricingPage() {
               <MessageCircle className="w-5 h-5" />
               Text 519-870-9136
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Trailer Photo */}
+      <section className="bg-white pb-0">
+        <div className="container-max px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <div className="rounded-2xl overflow-hidden">
+            <Image
+              src="/images/complete-junk-removal-trailer.jpg"
+              alt="Complete Junk Removal branded dump trailer used for volume-based junk hauling in Grand Bend Ontario"
+              width={1200}
+              height={500}
+              className="w-full h-56 md:h-72 object-cover"
+              sizes="(max-width: 768px) 100vw, 900px"
+            />
           </div>
         </div>
       </section>

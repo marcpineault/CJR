@@ -1,14 +1,28 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import { Shield, Recycle, Heart, MapPin, Users, Award } from "lucide-react";
 import CTABanner from "@/components/CTABanner";
 import SchemaMarkup, { localBusinessSchema } from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
-  title: "About Us — Complete Junk Removal Grand Bend ON",
+  title: "About Us — Local Junk Removal Team Grand Bend & London ON",
   description:
-    "Learn about Complete Junk Removal — your local, insured junk removal and demolition team serving Grand Bend, London, and Southwestern Ontario.",
+    "Meet the Complete Junk Removal team — locally owned, fully insured junk removal and demolition experts serving Grand Bend, London, Lambton Shores & Southwestern Ontario since day one.",
   alternates: {
     canonical: "https://completejunkremoval.ca/about",
+  },
+  openGraph: {
+    title: "About Complete Junk Removal — Your Local Junk Removal Experts",
+    description:
+      "Locally owned and operated junk removal and demolition team serving Grand Bend, London & Southwestern Ontario.",
+    images: [
+      {
+        url: "/images/team-group-photo.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Complete Junk Removal team standing with their fleet of trucks",
+      },
+    ],
   },
 };
 
@@ -57,8 +71,19 @@ export default function AboutPage() {
       <SchemaMarkup schema={localBusinessSchema} />
 
       {/* Hero */}
-      <section className="bg-brand-dark py-16 md:py-20">
-        <div className="container-max px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-brand-dark py-16 md:py-20 overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/team-group-photo.jpg"
+            alt="Complete Junk Removal team members standing together in front of their truck fleet"
+            fill
+            className="object-cover opacity-20"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark/70" />
+        </div>
+        <div className="relative container-max px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
             <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand-green-light mb-3">
               About Us
@@ -77,61 +102,86 @@ export default function AboutPage() {
 
       {/* Our Story */}
       <section className="section-padding bg-white">
-        <div className="container-max max-w-4xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-            <div>
-              <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand-green mb-3">
-                Our Story
-              </span>
-              <h2 className="font-heading text-3xl md:text-4xl font-extrabold tracking-heading mb-6">
-                Built on Hard Work and Community Trust
-              </h2>
-              <div className="space-y-4 text-gray-600 leading-relaxed">
-                <p>
-                  Complete Junk Removal started with a simple idea: provide
-                  honest, reliable junk removal services to the communities we
-                  call home. Based in Grand Bend, Ontario, we saw a need for a
-                  junk removal company that truly cares about its customers and
-                  the environment.
-                </p>
-                <p>
-                  What began as a small operation has grown into a trusted name
-                  across Southwestern Ontario. From residential cleanouts in
-                  Lambton Shores to commercial demolition projects in London, we
-                  have built our reputation one job at a time — through hard
-                  work, fair pricing, and a commitment to doing things right.
-                </p>
-                <p>
-                  We are not a franchise. We are not a call centre that
-                  dispatches strangers to your door. We are your neighbours. We
-                  live in these communities, we shop at the same stores, and we
-                  take pride in keeping our region clean and beautiful.
-                </p>
+        <div className="container-max max-w-5xl">
+          {/* Team photo */}
+          <div className="mb-12 rounded-2xl overflow-hidden">
+            <Image
+              src="/images/owner-with-fleet.jpg"
+              alt="Complete Junk Removal owner standing proudly with the company truck fleet and dump trailers"
+              width={1200}
+              height={600}
+              className="w-full h-64 md:h-96 object-cover"
+              sizes="(max-width: 768px) 100vw, 1200px"
+            />
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+              <div>
+                <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand-green mb-3">
+                  Our Story
+                </span>
+                <h2 className="font-heading text-3xl md:text-4xl font-extrabold tracking-heading mb-6">
+                  Built on Hard Work and Community Trust
+                </h2>
+                <div className="space-y-4 text-gray-600 leading-relaxed">
+                  <p>
+                    Complete Junk Removal started with a simple idea: provide
+                    honest, reliable junk removal services to the communities we
+                    call home. Based in Grand Bend, Ontario, we saw a need for a
+                    junk removal company that truly cares about its customers and
+                    the environment.
+                  </p>
+                  <p>
+                    What began as a small operation has grown into a trusted name
+                    across Southwestern Ontario. From residential cleanouts in
+                    Lambton Shores to commercial demolition projects in London, we
+                    have built our reputation one job at a time — through hard
+                    work, fair pricing, and a commitment to doing things right.
+                  </p>
+                  <p>
+                    We are not a franchise. We are not a call centre that
+                    dispatches strangers to your door. We are your neighbours. We
+                    live in these communities, we shop at the same stores, and we
+                    take pride in keeping our region clean and beautiful.
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="bg-brand-cream rounded-2xl p-8">
-              <h3 className="font-heading text-xl font-bold mb-4">
-                Why Local Matters
-              </h3>
-              <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
-                <p>
-                  When you hire a local company, your money stays in the
-                  community. We hire locally, we use local suppliers, and we
-                  donate usable items to local charities. That is the kind of
-                  impact a national franchise simply cannot offer.
-                </p>
-                <p>
-                  Being local also means we know the area. We know which
-                  recycling centres accept which materials. We know the roads,
-                  the neighbourhoods, and the regulations. And we know that our
-                  reputation depends on every single job we do.
-                </p>
-                <p>
-                  When you call Complete Junk Removal, you are talking to the
-                  people who will actually be doing the work. That direct
-                  relationship is something we value deeply, and it is why our
-                  customers keep coming back.
-                </p>
+              <div className="space-y-6">
+                <div className="rounded-2xl overflow-hidden">
+                  <Image
+                    src="/images/junk-hauling-walkway.jpg"
+                    alt="Complete Junk Removal crew hauling bags and items from a residential property"
+                    width={600}
+                    height={400}
+                    className="w-full h-48 object-cover"
+                    sizes="(max-width: 768px) 100vw, 600px"
+                  />
+                </div>
+                <div className="bg-brand-cream rounded-2xl p-8">
+                  <h3 className="font-heading text-xl font-bold mb-4">
+                    Why Local Matters
+                  </h3>
+                  <div className="space-y-4 text-sm text-gray-600 leading-relaxed">
+                    <p>
+                      When you hire a local company, your money stays in the
+                      community. We hire locally, we use local suppliers, and we
+                      donate usable items to local charities. That is the kind of
+                      impact a national franchise simply cannot offer.
+                    </p>
+                    <p>
+                      Being local also means we know the area. We know which
+                      recycling centres accept which materials. We know the roads,
+                      the neighbourhoods, and the regulations. And we know that our
+                      reputation depends on every single job we do.
+                    </p>
+                    <p>
+                      When you call Complete Junk Removal, you are talking to the
+                      people who will actually be doing the work. That direct
+                      relationship is something we value deeply, and it is why our
+                      customers keep coming back.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

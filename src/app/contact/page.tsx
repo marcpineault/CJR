@@ -4,11 +4,16 @@ import ContactForm from "@/components/ContactForm";
 import SchemaMarkup, { localBusinessSchema } from "@/components/SchemaMarkup";
 
 export const metadata: Metadata = {
-  title: "Contact Us — Free Junk Removal Estimate",
+  title: "Contact Us — Free Junk Removal Estimate Grand Bend & London ON",
   description:
-    "Get a free junk removal estimate in Grand Bend & London Ontario. Call 519-870-9136, text us photos, or fill out our contact form.",
+    "Get a free junk removal or demolition estimate in Grand Bend, London & Southwestern Ontario. Call 519-870-9136, text us photos for a quick quote, or fill out our contact form. Same-day service available.",
   alternates: {
     canonical: "https://completejunkremoval.ca/contact",
+  },
+  openGraph: {
+    title: "Contact Complete Junk Removal — Free Estimates",
+    description: "Call 519-870-9136 or text us photos for a fast, free junk removal quote in Grand Bend & London ON.",
+    images: [{ url: "/images/owner-with-fleet.jpg", width: 1200, height: 630, alt: "Contact Complete Junk Removal for a free estimate" }],
   },
 };
 

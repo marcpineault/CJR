@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ServiceCard from "@/components/ServiceCard";
@@ -151,6 +152,54 @@ export default function Home() {
       {/* How It Works */}
       <HowItWorks />
 
+      {/* Action Photos Gallery */}
+      <section className="bg-brand-cream py-12 md:py-16">
+        <div className="container-max px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+            <div className="rounded-xl overflow-hidden aspect-[4/3]">
+              <Image
+                src="/images/junk-removal-furniture-hallway.jpg"
+                alt="Junk removal worker carrying furniture through a hallway during a residential cleanout"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3]">
+              <Image
+                src="/images/demolition-wood-dumpster.jpg"
+                alt="Worker tossing demolition wood debris into a Complete Junk Removal dump trailer"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3]">
+              <Image
+                src="/images/shed-demolition-service.jpg"
+                alt="Complete Junk Removal crew performing shed demolition with a sledgehammer"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden aspect-[4/3]">
+              <Image
+                src="/images/junk-hauling-walkway.jpg"
+                alt="Junk removal crew hauling bags and debris from a residential property in Ontario"
+                width={400}
+                height={300}
+                className="w-full h-full object-cover"
+                sizes="(max-width: 768px) 50vw, 25vw"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Areas Served */}
       <section className="section-padding bg-brand-cream">
         <div className="container-max">
@@ -200,6 +249,37 @@ export default function Home() {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="relative section-padding bg-brand-dark overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/images/team-group-photo.jpg"
+            alt="The Complete Junk Removal team — five crew members standing in front of their truck fleet"
+            fill
+            className="object-cover opacity-15"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-brand-dark/90 to-brand-dark/80" />
+        </div>
+        <div className="relative container-max text-center">
+          <span className="inline-block text-xs font-bold uppercase tracking-widest text-brand-green-light mb-3">
+            Meet the Team
+          </span>
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-heading text-white mb-4">
+            Locally Owned. Fully Insured. Always Reliable.
+          </h2>
+          <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-8">
+            We are not a franchise — we are your neighbours. Our crew lives and works in the communities we serve, and we take pride in every job we do.
+          </p>
+          <a
+            href="/about"
+            className="btn-white text-base px-8 py-4 inline-flex items-center gap-2"
+          >
+            Learn More About Us
+          </a>
         </div>
       </section>
 

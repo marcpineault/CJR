@@ -1,4 +1,5 @@
 import { Phone, ArrowRight } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 interface CTABannerProps {
@@ -11,8 +12,17 @@ export default function CTABanner({
   subtitle = "Get a free, no-obligation estimate today. Same-day service available for most jobs.",
 }: CTABannerProps) {
   return (
-    <section className="bg-brand-green">
-      <div className="container-max px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+    <section className="relative bg-brand-green overflow-hidden">
+      <div className="absolute inset-0">
+        <Image
+          src="/images/owner-trucks-trailer.jpg"
+          alt="Complete Junk Removal owner with trucks and trailer ready for service"
+          fill
+          className="object-cover opacity-10"
+          sizes="100vw"
+        />
+      </div>
+      <div className="relative container-max px-4 sm:px-6 lg:px-8 py-12 md:py-16">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8">
           <div className="text-center lg:text-left">
             <h2 className="font-heading text-3xl md:text-4xl font-extrabold text-white tracking-heading">

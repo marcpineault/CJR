@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import {
   CheckCircle2,
   ArrowRight,
@@ -19,6 +20,37 @@ import CTABanner from "@/components/CTABanner";
 import ServiceCard from "@/components/ServiceCard";
 import SectionHeader from "@/components/SectionHeader";
 import services from "../../../../data/services.json";
+
+const serviceImages: Record<string, { src: string; alt: string }> = {
+  "residential-junk-removal": {
+    src: "/images/junk-removal-furniture-hallway.jpg",
+    alt: "Complete Junk Removal worker carrying a couch through a hallway during residential junk removal",
+  },
+  "commercial-junk-removal": {
+    src: "/images/junk-hauling-walkway.jpg",
+    alt: "Junk removal crew hauling commercial waste and bags from a property",
+  },
+  "garden-yard-waste": {
+    src: "/images/demolition-wood-dumpster.jpg",
+    alt: "Worker tossing yard waste and wood debris into a dump trailer",
+  },
+  "residential-demolition": {
+    src: "/images/shed-demolition-service.jpg",
+    alt: "Complete Junk Removal crew performing shed demolition with a sledgehammer in Ontario",
+  },
+  "commercial-demolition": {
+    src: "/images/deck-demolition-sawzall.jpg",
+    alt: "Worker using a reciprocating saw for deck demolition and removal",
+  },
+  "debris-removal": {
+    src: "/images/demolition-wood-dumpster.jpg",
+    alt: "Construction debris being loaded into a Complete Junk Removal dump trailer",
+  },
+  "estate-cleanouts": {
+    src: "/images/junk-removal-furniture-hallway.jpg",
+    alt: "Crew member carrying furniture during an estate cleanout in Southwestern Ontario",
+  },
+};
 
 /* ---------- Static generation ---------- */
 
@@ -43,6 +75,8 @@ export function generateMetadata({
     };
   }
 
+  const ogImage = serviceImages[service.slug];
+
   return {
     title: service.metaTitle,
     description: service.metaDescription,
@@ -56,6 +90,9 @@ export function generateMetadata({
       type: "website",
       locale: "en_CA",
       siteName: "Complete Junk Removal",
+      images: ogImage
+        ? [{ url: ogImage.src, width: 1200, height: 630, alt: ogImage.alt }]
+        : [{ url: "/images/team-trucks-fleet.jpg", width: 1200, height: 630, alt: "Complete Junk Removal team and fleet" }],
     },
   };
 }
@@ -168,6 +205,20 @@ export default function ServicePage({
       <section className="section-padding bg-white">
         <div className="container-max">
           <div className="max-w-4xl mx-auto">
+            {/* Service Image */}
+            {serviceImages[service.slug] && (
+              <div className="rounded-2xl overflow-hidden mb-12">
+                <Image
+                  src={serviceImages[service.slug].src}
+                  alt={serviceImages[service.slug].alt}
+                  width={1200}
+                  height={500}
+                  className="w-full h-64 md:h-80 object-cover"
+                  sizes="(max-width: 768px) 100vw, 900px"
+                />
+              </div>
+            )}
+
             {/* Intro */}
             <div className="prose prose-lg max-w-none mb-16">
               {service.content.intro.split("\n\n").map((paragraph, idx) => (

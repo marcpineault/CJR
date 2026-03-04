@@ -1,19 +1,21 @@
 import { Phone, ArrowRight, Star } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
   return (
     <section className="relative bg-brand-dark overflow-hidden">
-      {/* Background pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",
-            backgroundSize: "40px 40px",
-          }}
+      {/* Background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/team-trucks-fleet.jpg"
+          alt="Complete Junk Removal team with trucks and trailers ready for junk hauling in Grand Bend Ontario"
+          fill
+          className="object-cover opacity-20"
+          priority
+          sizes="100vw"
         />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/95 to-brand-dark/70" />
       </div>
 
       <div className="relative container-max px-4 sm:px-6 lg:px-8 py-16 md:py-20 lg:py-28">

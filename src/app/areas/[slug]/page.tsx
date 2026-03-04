@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import CTABanner from "@/components/CTABanner";
@@ -84,6 +85,22 @@ export function generateMetadata({
     alternates: {
       canonical: `https://completejunkremoval.ca/areas/${area.slug}`,
     },
+    openGraph: {
+      title: area.metaTitle,
+      description: area.metaDescription,
+      url: `https://completejunkremoval.ca/areas/${area.slug}`,
+      type: "website",
+      locale: "en_CA",
+      siteName: "Complete Junk Removal",
+      images: [
+        {
+          url: "/images/team-trucks-fleet.jpg",
+          width: 1200,
+          height: 630,
+          alt: `Complete Junk Removal serving ${area.city} Ontario with junk removal and demolition`,
+        },
+      ],
+    },
   };
 }
 
@@ -140,7 +157,7 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
       closes: "19:00",
     },
     priceRange: "$$",
-    image: "https://completejunkremoval.ca/images/logo-full.png",
+    image: "https://completejunkremoval.ca/images/team-trucks-fleet.jpg",
   };
 
   const introParagraphs = area.content.intro.split("\n\n");
@@ -185,6 +202,38 @@ export default function AreaPage({ params }: { params: { slug: string } }) {
       {/* Intro Content */}
       <section className="section-padding bg-white">
         <div className="container-max max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+            <div className="rounded-xl overflow-hidden">
+              <Image
+                src="/images/junk-removal-furniture-hallway.jpg"
+                alt={`Residential junk removal service in ${area.city} Ontario`}
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden">
+              <Image
+                src="/images/shed-demolition-service.jpg"
+                alt={`Demolition services available in ${area.city} by Complete Junk Removal`}
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+            <div className="rounded-xl overflow-hidden">
+              <Image
+                src="/images/complete-junk-removal-trailer.jpg"
+                alt={`Complete Junk Removal dump trailer serving ${area.city} and surrounding areas`}
+                width={400}
+                height={300}
+                className="w-full h-48 object-cover"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+            </div>
+          </div>
           <div className="space-y-6 text-gray-600 leading-relaxed">
             {introParagraphs.map((paragraph, index) => (
               <p key={index}>{paragraph}</p>

@@ -6,11 +6,16 @@ import SchemaMarkup from "@/components/SchemaMarkup";
 import reviews from "../../../data/reviews.json";
 
 export const metadata: Metadata = {
-  title: "Customer Reviews — Complete Junk Removal",
+  title: "Customer Reviews — 5-Star Junk Removal Grand Bend & London ON",
   description:
-    "Read real customer reviews for Complete Junk Removal in Grand Bend & London Ontario. 5-star rated junk removal and demolition services.",
+    "Read real 5-star customer reviews for Complete Junk Removal in Grand Bend, London & Southwestern Ontario. See why homeowners and businesses trust us for junk removal and demolition.",
   alternates: {
     canonical: "https://completejunkremoval.ca/reviews",
+  },
+  openGraph: {
+    title: "Customer Reviews — Complete Junk Removal",
+    description: "5-star rated junk removal and demolition services in Grand Bend & London Ontario.",
+    images: [{ url: "/images/team-group-photo.jpg", width: 1200, height: 630, alt: "Complete Junk Removal 5-star rated team" }],
   },
 };
 
